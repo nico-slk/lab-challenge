@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Español:
+Primero, en la ubicación '/lab-challenge/src'
+correr:
 
-## Available Scripts
+### `node api.js`
 
-In the project directory, you can run:
+para correr el back-end.
+
+En la dirección del proyecto ('/lab-challenge')
+correr:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+para hacer correr el front-end
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+BACK-END
+- En el archivo '/lab-challenge/api.js' podes ver la request con la dirección hecha a la dirección '/api/search?query=' la cual corre en el puerto 3001, para hacer la request
+al back-end 'http://localhost:3001/api/search?q=' con la queryParam que se le solicite al back-end
 
-### `npm test`
+FRONT-END
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Product Card
+Este componente renderiza la imagen y parte del titulo. Tiene un botón que despliega el resto de la información requerida como:
+Precio en 'ARS', condición, stock y el resto del titulo.
 
-### `npm run build`
+En el catalogo vas a poder:
+Ordenar por precio: De mayor a menor - De menor a mayor
+Filtrar por condición: Productos nuevos - Productos usados - Todos
+El componente catalogo está paginado en 30 productos por página.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ESTILO
+En esta ocación utilicé MaterializeCSS, haciendo una pagina web responsive.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+●▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬●
+●▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬●
 
-### `npm run eject`
+First, in the directory '/lab-challenge/src'
+run:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `node api.js`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+to run the back-end.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+In the proyect directory ('/lab-challenge')
+run:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `npm start`
 
-## Learn More
+to make run the front-end.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+BACK-END
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- In the file '/lab-challenge/api.js' you'll can see the API request with route '/api/search?query=' witch is running in the
+port 3001, to make te back-end request, 'http://localhost:3001/api/search?q=' with the queryParams with you want to recibe.
 
-### Code Splitting
+In the front-end, make the back-end request to the route '3001/api/search'. And same with the searchbar. Eject the search function
+witch make the back-end request.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+FRONT-END
 
-### Analyzing the Bundle Size
+Product Card
+This component, render the image and part of the title(truncate). This card have a button witch will deploy the rest of the information requered
+like: Price in "ARS", condition, stock, and the rest of the title.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+You can: 
+Order by price: Lower to higher - higher to lower
+Filter by condition: New products - Used products - All
+Paginate by 30 products per page.
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+STYLE
+I use in this ocation, MaterializeCSS. Making it responsive website.

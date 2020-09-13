@@ -64,9 +64,9 @@ function Catalogo(props) {
 			<div className="row">
 				<button type="submit" className="btn btn-primary col l6 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceAsc()}>
 					<i className="material-icons">arrow_drop_down</i>Menor a Mayor
-          			</button>
+				</button>
 				<button type="submit" className="btn btn-primary col l6 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceDesc()}>
-					<i className="material-icons">arrow_drop_up</i>Mayor a Menor
+					<i className="material-icons ">arrow_drop_up</i>Mayor a Menor
           			</button>
 			</div>
 			<div className="content">

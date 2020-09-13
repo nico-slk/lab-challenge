@@ -37,6 +37,7 @@ export default class Paginator extends Component {
                                 img={e.thumbnail}
                                 title={e.title}
                                 price={e.price}
+                                condition={e.condition}
                                 currentId={e.currency_id}
                                 availableQuantity={e.available_quantity}
                             />

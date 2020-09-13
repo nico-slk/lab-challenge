@@ -18,7 +18,8 @@ function ProductCard(props) {
 			<div className="card-reveal">
 				<p className="card-title">{props.title}</p>
 				<h5>${props.price} {props.currentId}</h5>
-				<p className="grey-text">stock: {props.availableQuantity}</p>
+				<p className="red-text darken-2">stock: {props.availableQuantity}</p>
+				<p className="teal-text">Condición: {props.condition === 'new' ? 'Nuevo' : 'Usado'}</p>
 			</div>
 		</div>
 	)
@@ -26,10 +27,3 @@ function ProductCard(props) {
 
 
 export default ProductCard
-
-	// < div >
-	// <img src={props.img} alt="" />
-	// 			</div >
-	// 			<h4>{props.title}</h4>
-	// 			<h5>$ {props.price}{props.currentId}</h5>
-	// 			<p>stock: {props.availableQuantity}</p>
