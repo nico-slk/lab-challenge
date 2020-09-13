@@ -19,8 +19,15 @@ const isLocalhost = Boolean(
     /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
   )
 );
-
-console.log(isLocalhost)
+console.log(' -- Hola Toni. Si estas leyendo esto, seguramente estabas buscando errores.');
+console.log(' -- Lamento informarte que no, no hay errores.');
+console.log(' -- Porque intenté ser lo mas prolijo que pude.');
+console.log(' -- Porque esta bueno que no hayan WARNS,');
+console.log(' -- Y porque me enseñaron bien.');
+console.log(' -- Aunque otros Henrys digan lo contrario');
+console.log(' ------------------------------------------ ');
+console.log(' ------------------------------------------ ');
+console.log(' -- La pag es responsive también --');
 
 export function register(config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
@@ -49,6 +56,7 @@ export function register(config) {
           );
         });
       } else {
+
         // Is not localhost. Just register service worker
         registerValidSW(swUrl, config);
       }

@@ -1,15 +1,21 @@
-const app = require('express').Router()
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const fetch = require("node-fetch");
 
-app.get('http://localhost:3000/api/search:query', (req, res) => {
-    fetch(`https://api.mercadolibre.com/sites/MLA/search?q=:query`)
-        .then((r) => r.json())
+
+app.use(cors());
+
+
+app.get(`/api/search`, (req, res) => {
+    console.log(req.query.q)
+    fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${req.query.q}`)
+        .then((res) => res.json())
         .then((data) => {
-            console.log(data);
+            res.send(data)
         })
-        .catch((error) => {
-            console.error(error);
-        })
-})
+});
 
 
-app.use('listener')
+
+app.listen(3001);

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../mundo.svg';
 import SearchBar from './SearchBar.jsx';
 
 
@@ -7,11 +6,26 @@ import SearchBar from './SearchBar.jsx';
 function Nav(props) {
 
 	return (
-		<nav>
-			<img src={logo} className="App-logo" alt="logo" />
-			<h1>TU PUTA MADRE</h1>
-			<SearchBar onSearch={props.onSearch} />
-		</nav>
+		<div className="container">
+			<nav className="row">
+				<div className="blk col s8 push-s2">
+					<div className="center-align">
+						<div className="blk input-field col s12">
+							<SearchBar className="center-align" onSearch={props.onSearch} />
+						</div>
+					</div>
+				</div>
+				{/* <div class="row">
+					<div class="col s4">
+						<div class="row">
+							<div class="input-field col s12">
+								
+							</div>
+						</div>
+					</div>
+				</div> */}
+			</nav>
+		</div>
 	);
 }
 
