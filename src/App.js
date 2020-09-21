@@ -9,7 +9,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      query: 'zapatillas'
+      query: 'SE'
     }
 
     this.onSearch = this.onSearch.bind(this)
@@ -17,16 +17,23 @@ class App extends Component {
 
   onSearch(valor) {
     if (!valor) {
-      valor = 'zapatillas'
+      valor = 'SE'
     }
-    fetch(`http://localhost:3001/api/search?q=${valor}`)
-      .then((r) => r.json())
-      .then((data) => {
-        this.setState(data)
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    if (!localStorage.getItem(`listado_${valor}`)) {
+      fetch(`http://localhost:3001/api/search?q=${valor}`)
+        .then((r) => r.json())
+        .then((data) => {
+          this.setState(data)
+          // console.log(`NO EXISTE listado_${valor}`)
+          localStorage.setItem(`listado_${valor}`, JSON.stringify(data)) // Seteo el item al estado, le asigno una key y despues seteo un obj a string
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    } else {
+      // console.log(`YA EXISTE listado_${valor}`)
+      this.setState(JSON.parse(localStorage.getItem(`listado_${valor}`))) // Busco el item por su key, lo paso de string a obj y guardo
+    }
   }
 
   componentDidMount() {

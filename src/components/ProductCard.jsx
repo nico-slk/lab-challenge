@@ -11,7 +11,7 @@ function ProductCard(props) {
 			</div>
 			<div className="card-content">
 				<p className="card-title truncate">{props.title}</p>
-				<Link to="/" className="btn-floating btn-large halfway-fab waves-effect waves-light teal" >
+				<Link to="/" className="btn-floating btn-large halfway-fab waves-effect waves-light light-blue lighten-2 teal" >
 					<i className="material-icons activator">arrow_drop_up</i>
 				</Link>
 			</div>

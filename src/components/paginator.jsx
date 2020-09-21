@@ -9,8 +9,15 @@ export default class Paginator extends Component {
         this.state = {
             products: this.props.p,
             currentPage: 1,
-            productPerPage: 30
+            productPerPage: 6
         }
+
+    }
+    componentDidMount() {
+        this.setState({
+            ...this.state,
+            currentPage: 1,
+        })
     }
 
     render() {
@@ -22,9 +29,11 @@ export default class Paginator extends Component {
         // Al array de todos los productos les hago un slice entre el primer elemento y el ultimo, despues filtro por tipo de moneda
 
 
-        const paginate = pageNum => this.setState({ currentPage: pageNum })
-        const nextPage = () => currentProduct.length >= productPerPage ? this.setState({ currentPage: currentPage + 1 }) : false
-        const prevPage = () => (currentPage > 1) ? this.setState({ currentPage: currentPage - 1 }) : false
+        const paginate = pageNum => this.setState({ ...this.state, currentPage: pageNum })
+        const nextPage = () => currentProduct.length >= productPerPage ? this.setState({ ...this.state, currentPage: currentPage + 1 }) : false
+        const prevPage = () => (currentPage > 1) ? this.setState({ ...this.state, currentPage: currentPage - 1 }) : false
+
+
 
 
         return (
@@ -47,7 +56,7 @@ export default class Paginator extends Component {
                     }
                 </div>
 
-                <PagesNav prodsPerPage={productPerPage} totalProds={this.state.products.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage} />
+                <PagesNav prodsPerPage={this.state.productPerPage} totalProds={this.props.p.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage} />
             </div>
         )
     }

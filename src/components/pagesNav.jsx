@@ -22,7 +22,7 @@ export default function pagesNav(props) {
                     </li>
                     {pageNumber ? pageNumber.map((num) =>
                         <li key={num}>
-                            <button type="submit" className="btn waves-effect" onClick={() => paginate(num)}>
+                            <button type="submit" className="btn waves-effect light-blue lighten-2" onClick={() => paginate(num)}>
                                 {num}
                             </button>
                         </li>
