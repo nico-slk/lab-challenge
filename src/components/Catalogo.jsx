@@ -51,21 +51,21 @@ function Catalogo(props) {
 	return (
 		<div className="container">
 			<div className="row">
-				<button type="submit" className="btn btn-primary col l4 m4 s12" onClick={() => filterByCondition('nuevo')}>
+				<button type="submit" className="btn btn-primary left col l3 m3 s12" onClick={() => filterByCondition('nuevo')}>
 					Nuevos
           			</button>
-				<button type="submit" className="btn btn-primary col l4 m4 s12" onClick={() => filterByCondition('usado')}>
+				<button type="submit" className="btn btn-primary center col l4 push-l1 m4 push-m1 s12" onClick={() => filterByCondition('usado')}>
 					Usados
           			</button>
-				<button type="submit" className="btn btn-primary col l4 m4 s12" onClick={() => filterByCondition('todos')}>
+				<button type="submit" className="btn btn-primary right col l3 m3 s12" onClick={() => filterByCondition('todos')}>
 					Todos
           			</button>
 			</div>
 			<div className="row">
-				<button type="submit" className="btn btn-primary col l6 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceAsc()}>
+				<button type="submit" className="btn btn-primary left col l5 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceAsc()}>
 					<i className="material-icons">arrow_drop_down</i>Menor a Mayor
 				</button>
-				<button type="submit" className="btn btn-primary col l6 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceDesc()}>
+				<button type="submit" className="btn btn-primary right col l5 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceDesc()}>
 					<i className="material-icons ">arrow_drop_up</i>Mayor a Menor
           			</button>
 			</div>

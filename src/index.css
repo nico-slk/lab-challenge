@@ -1,3 +1,4 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
 *{
   box-sizing: border-box;
@@ -54,9 +55,22 @@ code {
 
 
 nav{
+  padding-top: 20px;
   height: 150px;
   background:#ffea00;
   box-shadow: none;
+  box-sizing: border-box;
+}
+
+
+#buscador{
+  border-radius: 10px;
+  margin: 12px 0 0 0;
+}
+
+.btn{
+  border-radius: 10px;
+  /* margin: 5px; */
 }
 
 .brand-logo{

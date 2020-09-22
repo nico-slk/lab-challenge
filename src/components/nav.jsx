@@ -15,15 +15,6 @@ function Nav(props) {
 						</div>
 					</div>
 				</div>
-				{/* <div class="row">
-					<div class="col s4">
-						<div class="row">
-							<div class="input-field col s12">
-								
-							</div>
-						</div>
-					</div>
-				</div> */}
 			</nav>
 		</div>
 	);

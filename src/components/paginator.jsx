@@ -7,7 +7,7 @@ export default class Paginator extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            products: this.props.p,
+            products: this.props.p.filter((e) => e.currency_id !== "USD"),
             currentPage: 1,
             productPerPage: 6
         }
@@ -25,7 +25,7 @@ export default class Paginator extends Component {
 
         const indexOfLastProduct = currentPage * productPerPage; // determino el indice del ultimo producto de la pagina (pagina actual * cantidad de productos por pagina)
         const indexOfFirstPost = indexOfLastProduct - productPerPage; // determino el indice del primer producto de la pagina (ultimo - primero)
-        const currentProduct = this.props.p.slice(indexOfFirstPost, indexOfLastProduct).filter((e) => e.currency_id !== "USD")
+        const currentProduct = this.props.p.slice(indexOfFirstPost, indexOfLastProduct)
         // Al array de todos los productos les hago un slice entre el primer elemento y el ultimo, despues filtro por tipo de moneda
 
 
@@ -39,6 +39,7 @@ export default class Paginator extends Component {
         return (
             <div className="container col s12 m12 l12">
                 <div className="row">
+                    {console.log('currentProduct', currentProduct)}
                     {currentProduct ? currentProduct.map((e) =>
 
                         <div className="col s12 m6 l4 thiscard" key={e.id}>
