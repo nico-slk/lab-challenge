@@ -62,12 +62,14 @@ function Catalogo(props) {
           			</button>
 			</div>
 			<div className="row">
-				<button type="submit" className="btn btn-primary left col l5 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceAsc()}>
-					<i className="material-icons">arrow_drop_down</i>Menor a Mayor
+				<div className="col l10 push-l1 m10 push-m1 s12">
+					<button type="submit" className="btn btn-primary left col l5 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceAsc()}>
+						<i className="material-icons">arrow_drop_down</i>Menor a Mayor
 				</button>
-				<button type="submit" className="btn btn-primary right col l5 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceDesc()}>
-					<i className="material-icons ">arrow_drop_up</i>Mayor a Menor
+					<button type="submit" className="btn btn-primary right col l5 m5 push-m1 s12 valign-wrapper" onClick={() => sortByPriceDesc()}>
+						<i className="material-icons ">arrow_drop_up</i>Mayor a Menor
           			</button>
+				</div>
 			</div>
 			<div className="content">
 				<div className="row">

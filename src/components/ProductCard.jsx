@@ -5,8 +5,8 @@ function ProductCard(props) {
 	return (
 		<div className="card z-depth-3">
 			<div className="row">
-				<div className="card-image waves-block waves-light col l10 push-l1 m12 s10 push-s1 center-aling" >
-					<img src={props.img} alt="" className="activator center-aling" />
+				<div className="card-image waves-block waves-light center-align" >
+					<img src={props.img} alt="" className="activator center-align" />
 				</div>
 			</div>
 			<div className="card-content">
@@ -20,6 +20,9 @@ function ProductCard(props) {
 				<h5>${props.price} {props.currentId}</h5>
 				<p className="red-text darken-2">stock: {props.availableQuantity}</p>
 				<p className="teal-text">Condición: {props.condition === 'new' ? 'Nuevo' : 'Usado'}</p>
+				<button type="submit" className="btn btn-primary left" onClick={() => window.location = `${props.permalink}`}>
+					Ir a articulo
+				            </button>
 			</div>
 		</div>
 	)

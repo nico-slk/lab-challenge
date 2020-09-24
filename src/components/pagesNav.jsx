@@ -13,9 +13,9 @@ export default function pagesNav(props) {
     return (
         <div className="container">
             <div className="row">
-                <ul className="pagination col l12 push-l1 m12 push-m1 s12 push-s1">
+                <ul className="pagination col l10 push-l1 m10 push-m1 s10 push-s1">
                     <li>
-                        <button type="submit" className={`btn btn-primary waves-effect`} onClick={() => prevPage()}>
+                        <button type="submit" className="btn btn-primary waves-effect" onClick={() => prevPage()}>
                             <i className="material-icons">chevron_left</i>
                         </button>
 
@@ -28,7 +28,7 @@ export default function pagesNav(props) {
                         </li>
                     ) : false}
                     <li>
-                        <button type="submit" className={`btn btn-primary waves-effect`} onClick={() => nextPage()}>
+                        <button type="submit" className="btn btn-primary waves-effect" onClick={() => nextPage()}>
                             <i className="material-icons">chevron_right</i>
                         </button>
 

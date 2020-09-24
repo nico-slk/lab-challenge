@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ProductCard from './ProductCard'
-import PagesNav from './pagesNav'
+import Footer from './Footer'
+import Slide from './Slide'
 import { CommonLoading } from 'react-loadingg';
 
 export default class Paginator extends Component {
@@ -39,7 +40,7 @@ export default class Paginator extends Component {
         return (
             <div className="container col s12 m12 l12">
                 <div className="row">
-                    {console.log('currentProduct', currentProduct)}
+                    <Slide currentProduct={this.props.p} />
                     {currentProduct ? currentProduct.map((e) =>
 
                         <div className="col s12 m6 l4 thiscard" key={e.id}>
@@ -57,7 +58,7 @@ export default class Paginator extends Component {
                     }
                 </div>
 
-                <PagesNav prodsPerPage={this.state.productPerPage} totalProds={this.props.p.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage} />
+                <Footer prodsPerPage={this.state.productPerPage} totalProds={this.props.p.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage} />
             </div>
         )
     }
