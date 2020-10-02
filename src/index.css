@@ -37,17 +37,17 @@ code {
 }
 
 .card .card-image img {
-    display: block;
-    border-radius: 2px 2px 0 0;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 180px;
-    width: auto;
-    max-width: 240px;
-    margin: 0 auto;
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 180px;
+  width: auto;
+  max-width: 240px;
+  margin: 0 auto;
 }
 
 .card-content{
@@ -91,6 +91,11 @@ code {
   padding-bottom: 20px;
 }
 
+li nav i.material-icons{
+  line-height: 0;
+  height: 0;
+}
+
 nav{
   padding-top: 20px;
   height: 150px;
@@ -98,11 +103,6 @@ nav{
   box-shadow: none;
   box-sizing: border-box;
 }
-
-/* nav i{
-    height: 0; 
-    line-height: 0;
-} */
 
 .icon{
   margin-right: 5px;

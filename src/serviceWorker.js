@@ -21,10 +21,9 @@ const isLocalhost = Boolean(
 );
 console.log(' -- Hola Toni. Si estas leyendo esto, seguramente estabas buscando errores.');
 console.log(' -- Lamento informarte que no, no hay errores.');
-console.log(' -- Porque intenté ser lo mas prolijo que pude.');
-console.log(' -- Porque esta bueno que no hayan WARNS,');
-console.log(' -- Y porque me enseñaron bien.');
-console.log(' -- Aunque otros Henrys digan lo contrario');
+console.log(' -- Porque intenté ser lo mas prolijo que pude,');
+console.log(' -- orque esta bueno que no hayan WARNS,');
+console.log(' -- y porque me enseñaron bien.');
 console.log(' ------------------------------------------ ');
 console.log(' ------------------------------------------ ');
 console.log(' -- La pag es responsive también --');

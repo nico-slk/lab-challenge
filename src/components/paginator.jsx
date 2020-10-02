@@ -51,6 +51,7 @@ export default class Paginator extends Component {
                                 condition={e.condition}
                                 currentId={e.currency_id}
                                 availableQuantity={e.available_quantity}
+                                permalink={e.permalink}
                             />
                         </div>
 

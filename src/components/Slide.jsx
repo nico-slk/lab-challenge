@@ -45,9 +45,9 @@ export default function Slide(props) {
                             <img src={e.thumbnail} alt={e.title} />
                             <div className="slide-info">
                                 <h4>{e.title}</h4>
-                                <h5>
-                                    <b>${e.price}</b> {e.currency_id}<h5 className="red-text text-red-lighter 4">-{desc()}% OFF</h5>
-                                </h5>
+                                    <h5>
+                                        <span> <b>${e.price}</b> {e.currency_id}<h5 className="red-text text-red-lighter 4">-{desc()}% OFF</h5></span>
+                                    </h5>
                                 <button type="submit" className="btn btn-primary left" onClick={() => window.location = `${e.permalink}`}>
                                     Ir a articulo
 				                </button>
