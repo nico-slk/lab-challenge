@@ -51,7 +51,7 @@ to make run the front-end.
 BACK-END
 
 - In the file '/lab-challenge/api.js' you'll can see the API request with route '/api/search?query=' witch is running in the
-port 3001, to make te back-end request, 'http://localhost:3001/api/search?q=' with the queryParams with you want to recibe.
+port 3001, to make the back-end request, 'http://localhost:3001/api/search?q=' with the queryParams with you want to recibe.
 
 In the front-end, make the back-end request to the route '3001/api/search'. And same with the searchbar. Eject the search function
 witch make the back-end request.
