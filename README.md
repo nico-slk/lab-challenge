@@ -1,12 +1,12 @@
 Español:
-Primero, en la ubicación '/lab-challenge/src'
+Primero, en la ubicación '/pseudo-e-commerce/src'
 correr:
 
 ### `node api.js`
 
 para correr el back-end.
 
-En la dirección del proyecto ('/lab-challenge')
+En la dirección del proyecto ('/pseudo-e-commerce')
 correr:
 
 ### `npm start`
@@ -14,7 +14,7 @@ correr:
 para hacer correr el front-end
 
 BACK-END
-- En el archivo '/lab-challenge/api.js' podes ver la request con la dirección hecha a la dirección '/api/search?query=' la cual corre en el puerto 3001, para hacer la request
+- En el archivo '/pseudo-e-commerce/api.js' podes ver la request con la dirección hecha a la dirección '/api/search?query=' la cual corre en el puerto 3001, para hacer la request
 al back-end 'http://localhost:3001/api/search?q=' con la queryParam que se le solicite al back-end
 
 FRONT-END
@@ -26,7 +26,7 @@ Precio en 'ARS', condición, stock y el resto del titulo.
 En el catalogo vas a poder:
 Ordenar por precio: De mayor a menor - De menor a mayor
 Filtrar por condición: Productos nuevos - Productos usados - Todos
-El componente catalogo está paginado en 30 productos por página.
+El componente catalogo está paginado en "x" productos por página.
 
 ESTILO
 En esta ocación utilicé MaterializeCSS, haciendo una pagina web responsive.
@@ -34,14 +34,14 @@ En esta ocación utilicé MaterializeCSS, haciendo una pagina web responsive.
 ۩๑●▬▬▬▬●▬▬▬▬๑۩۩๑▬▬▬▬●▬▬▬▬๑۩۩๑▬▬▬▬●▬▬▬▬๑۩۩๑▬▬▬▬●▬▬▬▬●๑۩
 ●▬▬▬▬๑۩۩๑▬▬▬▬●▬▬▬▬๑۩۩๑▬▬▬▬●▬▬▬▬๑۩۩๑▬▬▬▬●▬▬▬▬●๑۩۩๑▬▬▬▬●
 
-First, in the directory '/lab-challenge/src'
+First, in the directory '/pseudo-e-commerce/src'
 run:
 
 ### `node api.js`
 
 to run the back-end.
 
-In the proyect directory ('/lab-challenge')
+In the proyect directory ('/pseudo-e-commerce')
 run:
 
 ### `npm start`
@@ -50,7 +50,7 @@ to make run the front-end.
 
 BACK-END
 
-- In the file '/lab-challenge/api.js' you'll can see the API request with route '/api/search?query=' witch is running in the
+- In the file '/pseudo-e-commerce/api.js' you'll can see the API request with route '/api/search?query=' witch is running in the
 port 3001, to make the back-end request, 'http://localhost:3001/api/search?q=' with the queryParams with you want to recibe.
 
 In the front-end, make the back-end request to the route '3001/api/search'. And same with the searchbar. Eject the search function
@@ -65,7 +65,7 @@ like: Price in "ARS", condition, stock, and the rest of the title.
 You can: 
 Order by price: Lower to higher - higher to lower
 Filter by condition: New products - Used products - All
-Paginate by 30 products per page.
+Paginate by "x" products per page.
 
 STYLE
 I use in this ocation, MaterializeCSS. Making it responsive website.
