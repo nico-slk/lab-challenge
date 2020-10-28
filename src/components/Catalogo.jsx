@@ -37,7 +37,7 @@ function Catalogo(props) {
 		if (condition === 'usado') {
 			setOrd({
 				...ord,
-				results: props.state.results.filter((e) => e.condition !== "new")
+				results: props.state.results.filter((e) => e.condition !== "used")
 			})
 		}
 		if (condition === 'todos') {
